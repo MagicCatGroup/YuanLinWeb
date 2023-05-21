@@ -26,6 +26,7 @@ h1 {
   background-color: #55802883;
   color: #f3feec;
   padding: 20px;
+  border-radius: 20px;
 
   font-family: STKaiti;
   font-size: 30px;
@@ -50,7 +51,8 @@ hr {
 
 p {
   text-indent: 2em;
-  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 li {
@@ -74,32 +76,20 @@ img {
 article {
   width: min(70ch, 100% - 4rem);
   margin-inline: auto;
+  line-height: 30px;
+
+  background-color: rgb(247, 250, 229);
+  border: 40px solid transparent;
+  border-image: url('/Images/甜甜圈.png');
+  border-image-slice: 100%;
+  border-image-width: 70px;
 }
 
-.olbox {
-  border: 2px solid rgb(134, 134, 134);
-  position: relative;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-  }
-
-  &::before {
-    top: -5px;
-    bottom: -5px;
-    border-bottom: 1px solid var(--borderColor);
-    border-right: 1px solid var(--borderColor);
-  }
-
-  &:hover::after,
-  &:hover::before {
-    width: calc(100% + 9px);
-    height: calc(100% + 9px);
-  }
+.contentBorder{
+  background-color: white;
+  border: 2px dashed #31b85e;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .picBox {
@@ -108,35 +98,28 @@ article {
   justify-content: space-around;
 }
 
-.titlebox {
-  width: 500px;
-  height: auto;
-  border: 2px solid rgb(134, 134, 134);
-  background-color: rgb(226, 158, 102);
-  margin: 0 auto;
-  transition: all 0.4s; /* Animation */
-
-  position: relative;
-  top: -30px;
-}
-
-.titlebox:hover {
-  box-shadow: 5px 3px 5px black;
-}
-
 .container {
   display: flex;
-  /* use flexbox to center the article / justify-content: center; / center horizontally / align-items: center; / center vertically / height: 100vh; / use the full viewport height */
 }
 
 .personInfo {
-  text-align: right;
-  font-size: 10px;
+  position: absolute;
+  text-align: center;
+  font-size: 15px;
+
+  right: 43%;
+  margin-top: 5%;
 }
 
-.note{
+.note {
   text-align: center;
-  margin-top: -20px;
+  margin-top: -30px;
+  margin-bottom: 5px;
 
   color: rgb(40, 40, 40);
+}
+
+.OnlyImg{
+  margin: 0 auto;
+  width: 93%;
 }
