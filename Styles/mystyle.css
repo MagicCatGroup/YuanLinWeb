@@ -1,6 +1,16 @@
 body {
-  background-color: #efded8;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%239C92AC' fill-opacity='0.19' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+  background: #c2e59cc9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #abd3f4eb,
+    #c2e59cc9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #abd3f4eb,
+    #c2e59cc9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.125rem;
@@ -13,7 +23,14 @@ h2 {
 }
 
 h1 {
-  text-align: left;
+  background-color: #55802883;
+  color: #f3feec;
+  padding: 20px;
+
+  font-family: STKaiti;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: -5px 3px 5px black;
 }
 
 h2 {
@@ -26,36 +43,15 @@ hr {
   border: none;
 }
 
-.hrstyle{
-    border: 1px solid #c0c0c0;
-    margin-top: 50px;
+.hrstyle {
+  border: 1px solid #c0c0c0;
+  margin-top: 50px;
 }
 
 p {
-  background-color: rgb(255, 181, 173);
   text-indent: 2em;
   padding: 5px;
-
-  animation: move 2s infinite alternate;
-  animation-iteration-count:1;/*动画只执行一次*/
-  animation-fill-mode: backwards; /*让动画停留在第一帧 */
 }
-
-@keyframes move {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX();
-    }
-
-    from {
-        transform: translateX(100px);
-      }
-      to {
-        transform: translateX(0);
-      }
-  }
 
 li {
   padding-bottom: 5px;
@@ -76,33 +72,33 @@ img {
 }
 
 article {
-  width: min(65ch, 100% - 4rem);
+  width: min(70ch, 100% - 4rem);
   margin-inline: auto;
 }
 
 .olbox {
   border: 2px solid rgb(134, 134, 134);
   position: relative;
-  
+
   &::before,
   &::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
   }
 
-  &::before{
-      top: -5px;
-      bottom: -5px;
-      border-bottom: 1px solid var(--borderColor);
-      border-right: 1px solid var(--borderColor);
+  &::before {
+    top: -5px;
+    bottom: -5px;
+    border-bottom: 1px solid var(--borderColor);
+    border-right: 1px solid var(--borderColor);
   }
 
   &:hover::after,
   &:hover::before {
-      width: calc(100% + 9px);
-      height: calc(100% + 9px); 
+    width: calc(100% + 9px);
+    height: calc(100% + 9px);
   }
 }
 
@@ -110,11 +106,6 @@ article {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.specialP {
-  background-color: #efa8ca70;
-  color: #d81e78;
 }
 
 .titlebox {
@@ -136,4 +127,16 @@ article {
 .container {
   display: flex;
   /* use flexbox to center the article / justify-content: center; / center horizontally / align-items: center; / center vertically / height: 100vh; / use the full viewport height */
+}
+
+.personInfo {
+  text-align: right;
+  font-size: 10px;
+}
+
+.note{
+  text-align: center;
+  margin-top: -20px;
+
+  color: rgb(40, 40, 40);
 }
