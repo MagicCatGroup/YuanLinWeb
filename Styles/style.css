@@ -21,17 +21,16 @@ article {
   width: min(70ch, 100% - 4rem);
   margin-inline: auto;
   line-height: 30px;
-  margin-bottom: 20px;
 
-  background: radial-gradient(black 3px, transparent 4px),
-    radial-gradient(black 3px, transparent 4px),
+  background: radial-gradient(rgb(221, 49, 120) 3px, transparent 4px),
+    radial-gradient(rgb(221, 49, 120) 3px, transparent 4px),
     linear-gradient(#ffffff 4px, transparent 0),
     linear-gradient(
       45deg,
       transparent 74px,
       transparent 75px,
-      #a4a4a4 75px,
-      #a4a4a4 76px,
+      #fdd9ff 75px,
+      #fdd9ff 76px,
       transparent 77px,
       transparent 109px
     ),
@@ -39,8 +38,8 @@ article {
       -45deg,
       transparent 75px,
       transparent 76px,
-      #a4a4a4 76px,
-      #a4a4a4 77px,
+      #fdd9ff 76px,
+      #fdd9ff 77px,
       transparent 78px,
       transparent 109px
     ),
@@ -69,9 +68,9 @@ h2 {
 }
 
 p {
-  color: #666;
+  color: #4e4e4e;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   text-indent: 2em;
   padding-left: 20px;
@@ -82,9 +81,9 @@ p {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 0px 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 0 8px rgba(0, 0, 0, 0.2);
 
-  background: linear-gradient(-150deg, transparent 1.5rem, #e1e1e1 0);
+  background: linear-gradient(-150deg, transparent 1.5rem, #dededb 0);
   border-radius: 0.3em;
   position: relative;
 }
@@ -109,21 +108,14 @@ p {
   border-bottom-left-radius: inherit; /* 左下角继承border-radius */
 }
 
-.personInfo {
-  text-align: center;
-  font-size: 15px;
-
-  background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0,
-    radial-gradient(circle closest-side, #ffffff 53%, rgba(255, 255, 255, 0) 0)
-      0 0,
-    radial-gradient(circle closest-side, #ffffff 50%, rgba(255, 255, 255, 0) 0)
-      55px 0 #48b;
-  background-size: 110px 200px;
-  background-repeat: repeat-x;
+.OnlyImg{
+  margin: 0 auto;
+  width: 93%;
 }
 
 .note {
   text-align: center;
+  font-size: 15px;
   margin-top: -30px;
   margin-bottom: 5px;
 
