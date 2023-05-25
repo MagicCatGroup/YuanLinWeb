@@ -18,12 +18,12 @@ body {
 }
 
 article {
-  width: min(70ch, 100% - 4rem);
+  width: min(75ch, 100% - 4rem);
   margin-inline: auto;
   line-height: 30px;
 
-  background: radial-gradient(rgb(221, 49, 120) 3px, transparent 4px),
-    radial-gradient(rgb(221, 49, 120) 3px, transparent 4px),
+  background: radial-gradient(rgb(126, 217, 146) 3px, transparent 4px),
+    radial-gradient(rgb(126, 217, 146) 3px, transparent 4px),
     linear-gradient(#ffffff 4px, transparent 0),
     linear-gradient(
       45deg,
