@@ -15,37 +15,19 @@ body {
     ),
     linear-gradient(#eee 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
+  position: relative;
 }
 
 article {
   width: min(75ch, 100% - 4rem);
   margin-inline: auto;
   line-height: 30px;
+  border-radius: 10px;
+  position: relative;
 
-  background: radial-gradient(rgb(126, 217, 146) 3px, transparent 4px),
-    radial-gradient(rgb(126, 217, 146) 3px, transparent 4px),
-    linear-gradient(#ffffff 4px, transparent 0),
-    linear-gradient(
-      45deg,
-      transparent 74px,
-      transparent 75px,
-      #fdd9ff 75px,
-      #fdd9ff 76px,
-      transparent 77px,
-      transparent 109px
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 75px,
-      transparent 76px,
-      #fdd9ff 76px,
-      #fdd9ff 77px,
-      transparent 78px,
-      transparent 109px
-    ),
-    #fff;
-  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-color: rgb(203, 229, 177);
+  z-index: 1;
+  overflow: hidden;
 }
 
 img,
@@ -56,9 +38,10 @@ video {
 }
 
 h1 {
-  color: #333;
+  color: #206328;
   font-family: Arial, sans-serif;
   font-size: 32px;
+  letter-spacing: 2px;
   text-align: center;
 }
 
@@ -82,35 +65,65 @@ p {
   margin: 0 auto;
   padding: 20px;
   box-shadow: -5px 0 8px rgba(0, 0, 0, 0.2);
+  position: block;
 
-  background: linear-gradient(-150deg, transparent 1.5rem, #dededb 0);
+  background-color: rgb(246, 253, 248);
+  border: 5px solid #49a04b;
   border-radius: 0.3em;
-  position: relative;
+  z-index: 3;
 }
 
-.container::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: -1.4rem;
-  width: 1.5em;
-  height: 2.55em;
-  background: linear-gradient(
-      to left bottom,
-      transparent 50%,
-      rgba(0, 0, 0, 0.2) 0,
-      rgba(0, 0, 0, 0.4)
-    )
-    100% 0 no-repeat;
-  transform: rotate(-30deg);
-  transform-origin: bottom right; /* 让三角形的右下角成为旋转的中心 */
-  box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.15);
-  border-bottom-left-radius: inherit; /* 左下角继承border-radius */
-}
-
-.OnlyImg{
+.OnlyImg {
   margin: 0 auto;
   width: 93%;
+  border-radius: 10px;
+}
+
+.Flower{
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: -50px;
+  margin-left: -80px;
+
+  background-image: url('../Images/two-passage/littleFlower.png');
+  background-size: 100%;
+  background-position:-450px -800px;
+}
+
+.chenguo{
+  position: absolute;
+  color: #323232;
+  width: 100px;
+  margin-top: -13px;
+}
+
+.title {
+  width: 600px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: -50px;
+
+  background: url("../Images/two-passage/titleFlower.png") no-repeat;
+  background-size: 75%;
+  background-position: center center;
+}
+
+.title p {
+  position: absolute;
+  text-align: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-left: 100px;
+
+  color: white;
+  text-shadow: 4px 1px 8px #1a1919;
 }
 
 .note {
@@ -120,4 +133,30 @@ p {
   margin-bottom: 5px;
 
   color: rgb(40, 40, 40);
+}
+
+.personInfo {
+  width: 100%;
+  height: 180px;
+  margin: 0 auto;
+
+  background-image: url("../Images/two-passage/Flowers.png");
+  background-size: 100%;
+  background-position: -200px -650px;
+  background-repeat: space;
+}
+
+.specialP {
+  position: absolute;
+  text-align: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-left: 450px;
+  margin-top: 80px;
+
+  color: white;
+  text-shadow: 2px 0px 5px black;
+  text-align: center;
 }
